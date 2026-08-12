@@ -9,7 +9,7 @@
 /* HERO */
 .more-hero {
   padding-top: 72px;
-  padding-bottom: 0;
+  padding-bottom: 20;
 }
 
 .more-hero-photo {
@@ -28,22 +28,23 @@
 
 .more-hero-caption {
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .more-hero-caption .button {
   display: inline-block;
   color: var(--text);
   font-size: 16px;
-  padding: 8px 17px;  
   font-weight: 600;
-  border: 1px solid var(--line);
+  padding: 8px 17px;
+  border: 1px solid var(--text);
   border-radius: 4px;
+  background: white;
 }
 
 .more-hero-caption .button:hover {
-  color: var(--text);
-  background: #f8f8f8;
+  color: white;
+  background: var(--text);
   border-color: var(--text);
   text-decoration: none;
 }
