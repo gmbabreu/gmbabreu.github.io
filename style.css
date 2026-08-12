@@ -101,7 +101,7 @@ a:hover {
 }
 .hero-photo img {
   width: 90%;
-  height: 250px;
+  height: 300px;
   object-fit: cover;
   object-position: center 80%;
   border-radius: 6px;
