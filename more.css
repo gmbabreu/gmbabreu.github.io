@@ -27,29 +27,20 @@
 }
 
 .more-hero-caption {
-  padding-top: 20px;
-  padding-bottom: 60px;
+  padding-top: 18px;
 }
 
-.more-hero-bottom {
-  display: flex;
-  align-items: center;
-}
-
-.cv-button {
+.more-hero-caption .button {
   display: inline-block;
-  padding: 9px 18px;
+  padding: 7px 15px;
   border: 1px solid var(--text);
   border-radius: 4px;
   color: var(--text);
-  background: white;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.4;
-  text-decoration: none;
+  font-size: 14px;
+  font-weight: 550;
 }
 
-.cv-button:hover {
+.more-hero-caption .button:hover {
   background: var(--text);
   color: white;
   text-decoration: none;
