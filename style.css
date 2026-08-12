@@ -416,10 +416,13 @@ h2 {
 }
 /* More about me */
 
+/* MORE ABOUT ME */
+
 .more-link {
-  padding-top: 10px;
+  padding-top: 35px;
   padding-bottom: 75px;
   text-align: center;
+  border-top: 1px solid var(--line);
 }
 
 .more-link a {
