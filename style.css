@@ -102,7 +102,7 @@ a:hover {
 
 .hero-photo img {
   width: 90%;
-  height: 100;
+  height: 150;
   object-fit: cover;
   object-position: center 150%;
   border-radius: 6px;
@@ -372,10 +372,6 @@ h2 {
   .hero {
     padding-top: 52px;
     padding-bottom: 60px;
-  }
-
-  .hero-photo img {
-    height: 220px;
   }
 
   h1 {
