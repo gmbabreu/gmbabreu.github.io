@@ -97,7 +97,6 @@ a:hover {
 /* HERO */
 
 .hero {
-  min-height: calc(100vh - 150px);
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -108,7 +107,7 @@ a:hover {
 
 .hero-photo img {
   width: 90%;
-  height: 165;
+  height: 150;
   object-fit: cover;
   object-position: center 150%;
   border-radius: 6px;
