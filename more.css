@@ -31,27 +31,25 @@
 }
 
 .more-link {
-  padding-top: 35px;
-  padding-bottom: 75px;
-  text-align: center;
-  border-top: none;
+  padding-top: 18px;
+  padding-bottom: 65px;
+  text-align: left;
 }
 
 .more-link a {
   display: inline-block;
   color: var(--text);
-  font-size: 19px;
-  font-weight: 650;
-  padding: 10px 20px;
-  border: 1px solid var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 7px 15px;
+  border: 1px solid var(--line);
   border-radius: 4px;
-  letter-spacing: 0;
-  text-transform: none;
 }
 
 .more-link a:hover {
-  background: var(--text);
-  color: white;
+  border-color: var(--text);
+  color: var(--text);
+  background: #f8f8f8;
   text-decoration: none;
 }
 /* RESPONSIVE */
@@ -62,12 +60,5 @@
 
   .more-hero-photo img {
     height: 220px;
-  }
-
-  .more-hero-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    margin-bottom: 40px;
   }
 }
