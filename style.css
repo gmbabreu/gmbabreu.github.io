@@ -1,0 +1,425 @@
+/* Gabriel Abreu — academic personal site */
+
+:root {
+  --bg: #ffffff;
+  --text: #202124;
+  --muted: #666a70;
+  --light: #8a8f98;
+  --line: #e7e8ea;
+  --accent: #174ea6;
+  --accent-hover: #0b3d91;
+  --tag-bg: #f4f5f6;
+  --max-width: 920px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.container {
+  width: min(calc(100% - 48px), var(--max-width));
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+}
+
+.nav {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.site-name {
+  color: var(--text);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+.site-name:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav nav a {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.nav nav a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* HERO */
+
+.hero {
+  padding-top: 72px;
+  padding-bottom: 88px;
+}
+
+.hero-photo {
+  margin-bottom: 40px;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 6px;
+  display: block;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  font-size: clamp(44px, 7vw, 70px);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-bottom: 27px;
+  color: var(--muted);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.intro {
+  max-width: 720px;
+  margin-bottom: 30px;
+  font-size: 19px;
+  line-height: 1.65;
+  color: #3f4247;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.links a {
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.links .button {
+  padding: 7px 15px;
+  border: 1px solid var(--text);
+  border-radius: 4px;
+  color: var(--text);
+}
+
+.links .button:hover {
+  background: var(--text);
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+
+.section {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 44px;
+  padding-top: 78px;
+  padding-bottom: 78px;
+  border-top: 1px solid var(--line);
+}
+
+.section-label {
+  padding-top: 4px;
+  color: var(--light);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.section-content {
+  min-width: 0;
+}
+
+.section-content > p {
+  max-width: 720px;
+}
+
+.section-content p {
+  color: #4d5157;
+}
+
+.section-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* HEADINGS */
+
+h2 {
+  margin-bottom: 7px;
+  font-size: 21px;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  font-weight: 650;
+}
+
+.affiliation {
+  margin-bottom: 12px;
+  color: var(--muted) !important;
+  font-size: 14px;
+}
+
+.degree {
+  margin-bottom: 8px;
+  color: var(--text) !important;
+  font-weight: 500;
+}
+
+/* RESEARCH */
+
+.research-item {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 25px;
+  padding-bottom: 42px;
+}
+
+.research-item:last-child {
+  padding-bottom: 0;
+}
+
+.research-meta,
+.timeline-date,
+.education-date {
+  color: var(--light);
+  font-size: 13px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+
+.project-links {
+  display: flex;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.project-links a {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* EXPERIENCE / EDUCATION */
+
+.timeline,
+.education {
+  display: grid;
+  gap: 34px;
+}
+
+.timeline-item,
+.education-item {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 25px;
+}
+
+.timeline-item p,
+.education-item p {
+  margin-bottom: 0;
+}
+
+.timeline-item h2,
+.education-item h2 {
+  margin-bottom: 4px;
+}
+
+/* NEWS */
+
+.news {
+  display: grid;
+  gap: 14px;
+}
+
+.news-item {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 25px;
+}
+
+.news-item > span {
+  color: var(--light);
+  font-size: 13px;
+}
+
+.news-item p {
+  margin-bottom: 0;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  border-top: 1px solid var(--line);
+  color: var(--light);
+  font-size: 12px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 720px) {
+  .container {
+    width: min(calc(100% - 34px), var(--max-width));
+  }
+
+  .site-header {
+    position: static;
+  }
+
+  .nav {
+    min-height: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .nav nav {
+    display: flex;
+    gap: 14px;
+  }
+
+  .nav nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    padding-top: 52px;
+    padding-bottom: 60px;
+  }
+
+  .hero-photo img {
+    height: 220px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .intro {
+    font-size: 17px;
+  }
+
+  .section {
+    display: block;
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .section-label {
+    margin-bottom: 27px;
+  }
+
+  .research-item,
+  .timeline-item,
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .research-meta,
+  .timeline-date,
+  .education-date {
+    margin-bottom: 2px;
+  }
+
+  .research-item {
+    padding-bottom: 35px;
+  }
+
+  .footer {
+    padding-bottom: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}

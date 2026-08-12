@@ -1,0 +1,66 @@
+/* More page — Gabriel Abreu */
+
+/* Active nav */
+.nav-active {
+  color: var(--text) !important;
+  font-weight: 650;
+}
+
+/* HERO */
+.more-hero {
+  padding-top: 72px;
+  padding-bottom: 0;
+}
+
+.more-hero-photo {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.more-hero-photo img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 6px;
+  display: block;
+}
+
+.more-hero-caption {
+  padding-top: 4px;
+}
+
+.more-hero-caption .eyebrow {
+  margin: 0 0 10px;
+}
+
+.more-hero-bottom {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.more-hero-text {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 720px) {
+  .more-hero {
+    padding-top: 48px;
+  }
+
+  .more-hero-photo img {
+    height: 220px;
+  }
+
+  .more-hero-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
