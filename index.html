@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="container nav">
       <nav aria-label="Main navigation">
-        <a href="#top">About</a>
+        <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#education">Education</a>
         <a href="more.html">More</a>
@@ -28,7 +28,7 @@
       <div class="hero-photo">
         <img src="profile.jpg" alt="Gabriel Abreu">
       </div>
-      <div class="hero-copy">
+      <div class="hero-copy" id="about">
         <p class="eyebrow">Mathematics · Optimization · Machine Learning</p>
         <h1>Gabriel Abreu</h1>
         <p class="subtitle">
@@ -153,5 +153,10 @@
     <p>© 2026 Gabriel Abreu · <a href="mailto:ga2740@nyu.edu">ga2740@nyu.edu</a></p>
     <p><a href="more.html">More →</a></p>
   </footer>
+<script>
+  window.addEventListener("load", function () {
+    document.getElementById("about").scrollIntoView();
+  });
+</script>
 </body>
 </html>
