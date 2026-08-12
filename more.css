@@ -31,22 +31,27 @@
   padding-bottom: 60px;
 }
 
+.more-hero-bottom {
+  display: flex;
+  align-items: center;
+}
+
 .cv-button {
   display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #202124;
+  padding: 9px 18px;
+  border: 1px solid var(--text);
   border-radius: 4px;
-  background-color: #ffffff;
-  color: #202124;
-  font-size: 17px;
+  color: var(--text);
+  background: white;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.4;
   text-decoration: none;
 }
 
 .cv-button:hover {
-  background-color: #202124;
-  color: #ffffff;
+  background: var(--text);
+  color: white;
   text-decoration: none;
 }
 
