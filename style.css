@@ -63,7 +63,7 @@ a:hover {
   min-height: 62px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 32px;
 }
 
@@ -81,12 +81,15 @@ a:hover {
 .nav nav {
   display: flex;
   align-items: center;
-  gap: 22px;
+  justify-content: center;
+  gap: 36px;
+  width: 100%;
 }
 
 .nav nav a {
   color: var(--muted);
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: 650;
 }
 
 .nav nav a:hover {
@@ -102,7 +105,7 @@ a:hover {
 }
 
 #about {
-  scroll-margin-top: 120px;
+  scroll-margin-top: 200px;
 }
 
 .hero-photo {
