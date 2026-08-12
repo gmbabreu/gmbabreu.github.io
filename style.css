@@ -288,6 +288,19 @@ h2 {
   margin-bottom: 4px;
 }
 
+/* More about me */
+
+.more-link {
+  padding-top: 10px;
+  padding-bottom: 75px;
+  text-align: right;
+}
+
+.more-link a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 /* NEWS */
 
 .news {
