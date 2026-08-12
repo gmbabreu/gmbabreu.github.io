@@ -293,12 +293,20 @@ h2 {
 .more-link {
   padding-top: 10px;
   padding-bottom: 75px;
-  text-align: right;
+  text-align: center;
 }
 
 .more-link a {
-  font-size: 16px;
-  font-weight: 600;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.more-link a:hover {
+  color: var(--accent);
+  text-decoration: none;
 }
 
 /* NEWS */
