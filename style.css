@@ -93,11 +93,7 @@ a:hover {
 }
 
 #about {
-  scroll-margin-top: 200px;
-}
-
-.hero-photo {
-  margin-bottom: 40px;
+  scroll-margin-top: 250px;
 }
 
 .hero-photo img {
