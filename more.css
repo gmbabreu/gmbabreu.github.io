@@ -28,15 +28,10 @@
 
 .more-hero-caption {
   padding-top: 18px;
+  padding-bottom: 55px;
 }
 
-.more-link {
-  padding-top: 18px;
-  padding-bottom: 65px;
-  text-align: left;
-}
-
-.more-link a {
+.more-hero-caption .button {
   display: inline-block;
   color: var(--text);
   font-size: 15px;
@@ -46,12 +41,13 @@
   border-radius: 4px;
 }
 
-.more-link a:hover {
-  border-color: var(--text);
+.more-hero-caption .button:hover {
   color: var(--text);
   background: #f8f8f8;
+  border-color: var(--text);
   text-decoration: none;
 }
+
 /* RESPONSIVE */
 @media (max-width: 720px) {
   .more-hero {
