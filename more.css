@@ -27,18 +27,23 @@
 }
 
 .more-hero-caption {
-  padding-top: 4px;
+  padding-top: 18px;
 }
 
-.more-hero-caption .eyebrow {
-  margin: 0 0 10px;
+.more-hero-caption .button {
+  display: inline-block;
+  padding: 7px 15px;
+  border: 1px solid var(--text);
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 550;
 }
 
-.more-hero-bottom {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
+.more-hero-caption .button:hover {
+  background: var(--text);
+  color: white;
+  text-decoration: none;
 }
 
 .more-hero-text {
