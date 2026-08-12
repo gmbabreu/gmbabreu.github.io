@@ -97,12 +97,14 @@ a:hover {
 }
 
 .hero-photo {
+    margin-bottom: 40px;
+}
+.hero-photo img {
   width: 90%;
-  height: 100;
+  height: 150px;
   object-fit: cover;
   object-position: center 150%;
   border-radius: 6px;
-  margin-bottom: 40px;
   display: block;
 }
 
@@ -285,26 +287,6 @@ h2 {
   margin-bottom: 4px;
 }
 
-/* More about me */
-
-.more-link {
-  padding-top: 10px;
-  padding-bottom: 75px;
-  text-align: center;
-}
-
-.more-link a {
-  color: var(--text);
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.more-link a:hover {
-  color: var(--accent);
-  text-decoration: none;
-}
 
 /* NEWS */
 
@@ -431,4 +413,24 @@ h2 {
   * {
     transition: none !important;
   }
+}
+/* More about me */
+
+.more-link {
+  padding-top: 10px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.more-link a {
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.more-link a:hover {
+  color: var(--accent);
+  text-decoration: none;
 }
