@@ -30,29 +30,30 @@
   padding-top: 18px;
 }
 
-.more-hero-caption .button {
-  display: inline-block;
-  padding: 7px 15px;
-  border: 1px solid var(--text);
-  border-radius: 4px;
-  color: var(--text);
-  font-size: 14px;
-  font-weight: 550;
+.more-link {
+  padding-top: 35px;
+  padding-bottom: 75px;
+  text-align: center;
+  border-top: none;
 }
 
-.more-hero-caption .button:hover {
+.more-link a {
+  display: inline-block;
+  color: var(--text);
+  font-size: 19px;
+  font-weight: 650;
+  padding: 10px 20px;
+  border: 1px solid var(--text);
+  border-radius: 4px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.more-link a:hover {
   background: var(--text);
   color: white;
   text-decoration: none;
 }
-
-.more-hero-text {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
-  line-height: 1.6;
-}
-
 /* RESPONSIVE */
 @media (max-width: 720px) {
   .more-hero {
