@@ -26,18 +26,22 @@
   display: block;
 }
 
-.more-hero-caption {
-  padding-top: 18px;
+/* Align CV button inline with links */
+.more-hero-caption .links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .more-hero-caption .button {
-  display: inline-block;
   padding: 7px 15px;
   border: 1px solid var(--text);
   border-radius: 4px;
   color: var(--text);
   font-size: 14px;
   font-weight: 550;
+  text-decoration: none;
 }
 
 .more-hero-caption .button:hover {
