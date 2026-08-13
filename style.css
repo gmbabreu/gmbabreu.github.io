@@ -138,8 +138,9 @@ h1 {
   line-height: 1.5;
 }
 
+
 .intro {
-  max-width: 720px;
+  max-width: none; /* Changed from 720px */
   margin-bottom: 30px;
   font-size: 19px;
   line-height: 1.65;
